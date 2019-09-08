@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/**
+			 * IE6的双倍边距bug
+			 * 在IE6中，当为一个浮动的元素设置左外边距
+			 * 		或者为一个右浮动的元素设置右外边距时；
+			 * 		这个外边距会是设置值的两倍
+			 * */
+			.box1{
+				width: 100px;
+				height: 100px;
+				float: left;
+				/**
+				 * 添加一个样式解决IE6的双倍边距问题
+				 */
+				display:inline;
+				/*inline 默认。此元素会被显示为内联元素，元素前后没有换行符 */
+				background-color: red;
+				margin-left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			
+		</div>
+	</body>
+</html>
